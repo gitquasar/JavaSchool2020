@@ -14,12 +14,14 @@ public class Task4 {
         BigInteger y = new BigInteger("1");
         BigInteger res = new BigInteger("0");
         if (n > 2 && n < 100) {
+            System.out.printf("%d %d ", x, y);
             for (int i = 2; i < n; i++) {
                 res = x.add(y);
+                System.out.printf("%d ", res);
                 x = y;
                 y = res;
             }
         }
-        System.out.println(res);
+        System.out.println();
     }
 }
