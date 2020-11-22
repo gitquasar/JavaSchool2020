@@ -1,3 +1,5 @@
+package ru.school.lesson1;
+
 import java.util.Arrays;
 import java.util.Random;
 

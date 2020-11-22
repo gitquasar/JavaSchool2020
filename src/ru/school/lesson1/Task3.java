@@ -1,3 +1,5 @@
+package ru.school.lesson1;
+
 import static java.lang.Math.ceil;
 import static java.lang.Math.sqrt;
 

@@ -1,3 +1,5 @@
+package ru.school.lesson1;
+
 import java.math.BigInteger;
 import java.util.Scanner;
 
