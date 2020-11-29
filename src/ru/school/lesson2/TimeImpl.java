@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class TimeImpl implements Command {
-    private final static String COMMAND_NAME = "time";
+    private static final String COMMAND_NAME = "time";
 
     @Override
     public String getName() {
@@ -14,6 +14,6 @@ public class TimeImpl implements Command {
     @Override
     public void execute() {
         LocalDateTime localDateTime = LocalDateTime.now();
-        System.out.println(localDateTime.toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")).toString());
+        System.out.println(localDateTime.toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
     }
 }

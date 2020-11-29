@@ -3,7 +3,7 @@ package ru.school.lesson2;
 import java.time.LocalDateTime;
 
 public class DateImpl implements Command {
-    private final static String COMMAND_NAME = "date";
+    private static final String COMMAND_NAME = "date";
     @Override
     public String getName() {
         return COMMAND_NAME;
