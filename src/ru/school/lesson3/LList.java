@@ -14,8 +14,8 @@ public class LList<E> {
     private Node<E> root;
 
     public void add(E item) {
-        Node tmpItem = new Node(item);
-        Node lastItem = findLast();
+        Node<E> tmpItem = new Node(item);
+        Node<E> lastItem = findLast();
 
         if (lastItem != null) {
             lastItem.next = tmpItem;
@@ -58,7 +58,7 @@ public class LList<E> {
     }
 
 
-    Node findLast() {
+    Node<E> findLast() {
         if (root == null)
             return null;
         else {
@@ -78,7 +78,7 @@ public class LList<E> {
         }
 
         E data;
-        Node next;
+        Node<E> next;
     }
 }
 
