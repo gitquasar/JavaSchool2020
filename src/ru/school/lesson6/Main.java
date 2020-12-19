@@ -24,8 +24,8 @@ public class Main {
                 throw myException; //Правильней было бы сунуть это внутрь add, но так нагляднее
             }
         } catch (MyException ex) {
-            System.out.println("Code: " + ex.code);
-            System.out.println("Description: " + ex.description);
+            System.out.println("Code: " + ex.getCode());
+            System.out.println("Description: " + ex.getDescription());
             System.out.println(ex.getMessage());
             ex.printStackTrace();
         }
