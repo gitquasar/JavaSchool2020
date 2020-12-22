@@ -6,4 +6,10 @@ public interface Box<E extends Number> {
 
     E get(int elementId);
 
+    void sort();
+
+    E max();
+
+    void print();
+
 }
